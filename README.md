@@ -2,7 +2,7 @@
 
 <img src="resources/images/banner.png" alt="Reyhan Commerce Framework" width="780" style="max-width: 100%; border-radius: 12px; margin-bottom: 24px;" />
 
-# 🌿 Reyhan Commerce Core (`reyhan-commerce/core`)
+#  Reyhan Commerce Core (`reyhan-commerce/core`)
 
 ### Sovereign Enterprise Headless E-Commerce Engine for Laravel 13
 **Engineered for High Concurrency, Double-Entry Financial Precision, and Modular Extensibility**
