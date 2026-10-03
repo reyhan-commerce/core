@@ -32,7 +32,7 @@ final class ReyhanVersionCommand extends Command
     {
         $this->newLine();
         $this->line('<fg=green;options=bold>╭────────────────────────────────────────────────────────╮</>');
-        $this->line('<fg=green;options=bold>│       🌿  Reyhan Headless Commerce Framework           │</>');
+        $this->line('<fg=green;options=bold>│        Reyhan Headless Commerce Framework           │</>');
         $this->line('<fg=green;options=bold>╰────────────────────────────────────────────────────────╯</>');
         $this->newLine();
 

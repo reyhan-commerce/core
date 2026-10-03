@@ -31,7 +31,7 @@ final class ReyhanInstallCommand extends Command
     {
         $this->newLine();
         $this->line('<fg=green;options=bold>╭────────────────────────────────────────────────────────╮</>');
-        $this->line('<fg=green;options=bold>│       🌿 Reyhan Engine Automated Provisioning          │</>');
+        $this->line('<fg=green;options=bold>│       Reyhan Engine Automated Provisioning          │</>');
         $this->line('<fg=green;options=bold>╰────────────────────────────────────────────────────────╯</>');
         $this->newLine();
 

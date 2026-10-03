@@ -30,7 +30,7 @@ final class ReyhanUpdateCommand extends Command
     {
         $this->newLine();
         $this->line('<fg=green;options=bold>╭────────────────────────────────────────────────────────╮</>');
-        $this->line('<fg=green;options=bold>│      🌿 Reyhan Core Engine Update Sequence             │</>');
+        $this->line('<fg=green;options=bold>│      Reyhan Core Engine Update Sequence             │</>');
         $this->line('<fg=green;options=bold>╰────────────────────────────────────────────────────────╯</>');
         $this->newLine();
 
@@ -40,7 +40,7 @@ final class ReyhanUpdateCommand extends Command
         foreach ($result->logs as $log) {
             if (str_starts_with($log, '[')) {
                 $this->line("<fg=yellow>{$log}</>");
-            } elseif (str_starts_with($log, '✔') || str_starts_with($log, '🎉') || str_starts_with($log, '🌿')) {
+            } elseif (str_starts_with($log, '✔') || str_starts_with($log, '🎉') || str_starts_with($log, '')) {
                 $this->line("<fg=green>{$log}</>");
             } elseif (str_starts_with($log, '✖')) {
                 $this->line("<fg=red;options=bold>{$log}</>");

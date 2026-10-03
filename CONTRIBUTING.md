@@ -45,7 +45,7 @@ Before submitting a Pull Request, ensure all checks pass:
 
 ---
 
-## 🌿 Git Workflow & Pull Requests
+## Git Workflow & Pull Requests
 
 1. **Fork the repository** on GitHub.
 2. **Create a topic branch**: `git checkout -b feature/dynamic-shipping-pipeline` or `git checkout -b fix/ledger-rounding`.
@@ -53,4 +53,4 @@ Before submitting a Pull Request, ensure all checks pass:
 4. **Push to your fork** and open a Pull Request targeting the `main` branch.
 5. Ensure all GitHub Actions CI checks pass.
 
-Thank you for helping empower sovereign commerce! 🌿
+Thank you for helping empower sovereign commerce! 
