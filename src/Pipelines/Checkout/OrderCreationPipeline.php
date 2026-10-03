@@ -62,6 +62,32 @@ final class OrderCreationPipeline
     }
 
     /**
+     * Replace a core pipe with a customized userland pipe.
+     *
+     * @param  class-string  $target
+     * @param  class-string  $replacement
+     */
+    public static function replacePipe(string $target, string $replacement): void
+    {
+        foreach (self::$pipes as $key => $pipe) {
+            if ($pipe === $target) {
+                self::$pipes[$key] = $replacement;
+                return;
+            }
+        }
+    }
+
+    /**
+     * Remove a core pipe from the active execution list.
+     *
+     * @param  class-string  $target
+     */
+    public static function removePipe(string $target): void
+    {
+        self::$pipes = array_values(array_filter(self::$pipes, fn (string $p): bool => $p !== $target));
+    }
+
+    /**
      * Set the entire pipes list.
      *
      * @param  array<int, class-string>  $pipes
