@@ -2,9 +2,9 @@
 
 namespace Reyhan\Core\Database\Seeders;
 
-use Reyhan\Core\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Reyhan\Core\Models\User;
 
 class DatabaseSeeder extends Seeder
 {

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Database\Seeders;
 
-use Reyhan\Core\Models\LedgerAccount;
 use Illuminate\Database\Seeder;
+use Reyhan\Core\Models\LedgerAccount;
 
 class LedgerAccountsSeeder extends Seeder
 {

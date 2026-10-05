@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Database\Factories;
 
-use Reyhan\Core\Models\Admin;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
+use Reyhan\Core\Models\Admin;
 
 /**
  * @extends Factory<Admin>

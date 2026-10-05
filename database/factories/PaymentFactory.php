@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Database\Factories;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Reyhan\Core\Enums\PaymentGateway;
 use Reyhan\Core\Enums\PaymentStatus;
 use Reyhan\Core\Models\Order;
 use Reyhan\Core\Models\Payment;
 use Reyhan\Core\Models\User;
-use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
  * @extends Factory<Payment>

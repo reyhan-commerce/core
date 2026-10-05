@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Database\Seeders;
 
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Str;
 use Reyhan\Core\Models\Attribute;
 use Reyhan\Core\Models\AttributeValue;
 use Reyhan\Core\Models\Brand;
 use Reyhan\Core\Models\Category;
 use Reyhan\Core\Models\Product;
 use Reyhan\Core\Models\ProductVariant;
-use Illuminate\Database\Seeder;
-use Illuminate\Support\Str;
 
 class DigitalPresetSeeder extends Seeder
 {

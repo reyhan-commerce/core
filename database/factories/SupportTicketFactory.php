@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Database\Factories;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 use Reyhan\Core\Enums\TicketDepartment;
 use Reyhan\Core\Enums\TicketPriority;
 use Reyhan\Core\Enums\TicketStatus;
 use Reyhan\Core\Models\SupportTicket;
 use Reyhan\Core\Models\User;
-use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Str;
 
 /**
  * @extends Factory<SupportTicket>

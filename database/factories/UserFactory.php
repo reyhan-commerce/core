@@ -2,8 +2,8 @@
 
 namespace Reyhan\Core\Database\Factories;
 
-use Reyhan\Core\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Reyhan\Core\Models\User;
 
 /**
  * @extends Factory<User>

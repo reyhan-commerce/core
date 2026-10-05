@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Database\Factories;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Reyhan\Core\Enums\ReviewStatus;
 use Reyhan\Core\Models\Product;
 use Reyhan\Core\Models\Review;
 use Reyhan\Core\Models\User;
-use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
  * @extends Factory<Review>

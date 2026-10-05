@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Database\Seeders;
 
+use Illuminate\Database\Seeder;
 use Reyhan\Core\Models\Category;
 use Reyhan\Core\Models\Product;
 use Reyhan\Core\Models\ProductSpecification;
 use Reyhan\Core\Models\Specification;
 use Reyhan\Core\Models\SpecificationGroup;
-use Illuminate\Database\Seeder;
 
 class SpecificationSeeder extends Seeder
 {

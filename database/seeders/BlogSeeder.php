@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Database\Seeders;
 
+use Illuminate\Database\Seeder;
 use Reyhan\Core\Models\Admin;
 use Reyhan\Core\Models\BlogCategory;
 use Reyhan\Core\Models\BlogPost;
-use Illuminate\Database\Seeder;
 
 class BlogSeeder extends Seeder
 {

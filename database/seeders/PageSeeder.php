@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Database\Seeders;
 
+use Illuminate\Database\Seeder;
 use Reyhan\Core\Models\Page;
 use Reyhan\Core\Settings\GeneralSettings;
-use Illuminate\Database\Seeder;
 
 class PageSeeder extends Seeder
 {

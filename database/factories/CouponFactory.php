@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Database\Factories;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Reyhan\Core\Enums\CouponScope;
 use Reyhan\Core\Enums\CouponType;
 use Reyhan\Core\Models\Coupon;
-use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
  * @extends Factory<Coupon>

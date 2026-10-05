@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Database\Factories;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Reyhan\Core\Enums\AttributeType;
 use Reyhan\Core\Models\Attribute;
-use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
  * @extends Factory<Attribute>

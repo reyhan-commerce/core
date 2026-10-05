@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Database\Factories;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Reyhan\Core\Enums\OrderStatus;
 use Reyhan\Core\Enums\ShippingMethod;
 use Reyhan\Core\Models\Order;
 use Reyhan\Core\Models\User;
-use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
  * @extends Factory<Order>

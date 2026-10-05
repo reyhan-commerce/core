@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Database\Seeders;
 
-use Reyhan\Core\Models\City;
-use Reyhan\Core\Models\Province;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Reyhan\Core\Models\City;
+use Reyhan\Core\Models\Province;
 
 class IranGeoSeeder extends Seeder
 {

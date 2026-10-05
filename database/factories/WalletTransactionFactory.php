@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Database\Factories;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Reyhan\Core\Enums\WalletTransactionType;
 use Reyhan\Core\Models\User;
 use Reyhan\Core\Models\WalletTransaction;
-use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
  * @extends Factory<WalletTransaction>

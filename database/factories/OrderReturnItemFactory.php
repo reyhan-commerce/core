@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Database\Factories;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Reyhan\Core\Models\OrderItem;
 use Reyhan\Core\Models\OrderReturn;
 use Reyhan\Core\Models\OrderReturnItem;
-use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
  * @extends Factory<OrderReturnItem>

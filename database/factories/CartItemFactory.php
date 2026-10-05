@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Database\Factories;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Reyhan\Core\Models\Cart;
 use Reyhan\Core\Models\CartItem;
 use Reyhan\Core\Models\ProductVariant;
-use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
  * @extends Factory<CartItem>

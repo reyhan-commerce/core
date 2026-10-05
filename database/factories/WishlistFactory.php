@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Database\Factories;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Reyhan\Core\Models\Product;
 use Reyhan\Core\Models\User;
 use Reyhan\Core\Models\Wishlist;
-use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
  * @extends Factory<Wishlist>

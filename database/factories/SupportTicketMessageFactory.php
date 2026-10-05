@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Database\Factories;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Reyhan\Core\Models\SupportTicket;
 use Reyhan\Core\Models\SupportTicketMessage;
 use Reyhan\Core\Models\User;
-use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
  * @extends Factory<SupportTicketMessage>

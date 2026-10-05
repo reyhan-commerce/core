@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Database\Factories;
 
-use Reyhan\Core\Models\ContactMessage;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Reyhan\Core\Models\ContactMessage;
 
 /**
  * @extends Factory<ContactMessage>

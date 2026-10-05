@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Database\Factories;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Reyhan\Core\Models\Coupon;
 use Reyhan\Core\Models\CouponUsage;
 use Reyhan\Core\Models\Order;
 use Reyhan\Core\Models\User;
-use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
  * @extends Factory<CouponUsage>

@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Database\Factories;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Reyhan\Core\Models\Specification;
 use Reyhan\Core\Models\SpecificationGroup;
-use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
  * @extends Factory<Specification>

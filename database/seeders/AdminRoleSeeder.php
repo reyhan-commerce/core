@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Database\Seeders;
 
-use Reyhan\Core\Models\Admin;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
+use Reyhan\Core\Models\Admin;
 use Spatie\Permission\Models\Role;
 
 class AdminRoleSeeder extends Seeder

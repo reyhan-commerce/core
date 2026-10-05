@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Database\Seeders;
 
-use Reyhan\Core\Models\ShippingMethod;
 use Illuminate\Database\Seeder;
+use Reyhan\Core\Models\ShippingMethod;
 
 class ShippingMethodSeeder extends Seeder
 {

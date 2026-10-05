@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Database\Seeders;
 
-use Reyhan\Core\Models\Faq;
 use Illuminate\Database\Seeder;
+use Reyhan\Core\Models\Faq;
 
 class FaqSeeder extends Seeder
 {
