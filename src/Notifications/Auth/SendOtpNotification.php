@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Notifications\Auth;
 
-use Reyhan\Core\Notifications\Channels\SmsChannel;
-use Reyhan\Core\Notifications\Messages\SmsMessage;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Notification;
+use Reyhan\Core\Notifications\Channels\SmsChannel;
+use Reyhan\Core\Notifications\Messages\SmsMessage;
 
 class SendOtpNotification extends Notification implements ShouldQueue
 {

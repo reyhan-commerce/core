@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\BlogPosts\Pages;
 
-use Reyhan\Core\Filament\Resources\BlogPosts\BlogPostResource;
 use Filament\Resources\Pages\CreateRecord;
+use Reyhan\Core\Filament\Resources\BlogPosts\BlogPostResource;
 
 class CreateBlogPost extends CreateRecord
 {

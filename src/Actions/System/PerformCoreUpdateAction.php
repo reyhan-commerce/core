@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Actions\System;
 
-use Reyhan\Core\Data\System\UpdateResultData;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
+use Reyhan\Core\Data\System\UpdateResultData;
 use Throwable;
 
 final class PerformCoreUpdateAction

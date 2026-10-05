@@ -4,13 +4,6 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\Payments;
 
-use Reyhan\Core\Enums\PaymentGateway;
-use Reyhan\Core\Enums\PaymentStatus;
-use Reyhan\Core\Filament\Resources\Payments\Pages\CreatePayment;
-use Reyhan\Core\Filament\Resources\Payments\Pages\EditPayment;
-use Reyhan\Core\Filament\Resources\Payments\Pages\ListPayments;
-use Reyhan\Core\Models\Payment;
-use Reyhan\Core\Models\User;
 use BackedEnum;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
@@ -27,6 +20,13 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Morilog\Jalali\Jalalian;
+use Reyhan\Core\Enums\PaymentGateway;
+use Reyhan\Core\Enums\PaymentStatus;
+use Reyhan\Core\Filament\Resources\Payments\Pages\CreatePayment;
+use Reyhan\Core\Filament\Resources\Payments\Pages\EditPayment;
+use Reyhan\Core\Filament\Resources\Payments\Pages\ListPayments;
+use Reyhan\Core\Models\Payment;
+use Reyhan\Core\Models\User;
 use UnitEnum;
 
 class PaymentResource extends Resource

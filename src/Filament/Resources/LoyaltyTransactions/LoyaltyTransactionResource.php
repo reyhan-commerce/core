@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\LoyaltyTransactions;
 
-use Reyhan\Core\Filament\Resources\LoyaltyTransactions\Pages\ListLoyaltyTransactions;
-use Reyhan\Core\Models\LoyaltyTransaction;
 use BackedEnum;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
@@ -14,6 +12,8 @@ use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
+use Reyhan\Core\Filament\Resources\LoyaltyTransactions\Pages\ListLoyaltyTransactions;
+use Reyhan\Core\Models\LoyaltyTransaction;
 use UnitEnum;
 
 class LoyaltyTransactionResource extends Resource

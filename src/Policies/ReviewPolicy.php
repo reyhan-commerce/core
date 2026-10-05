@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Policies;
 
-use Reyhan\Core\Models\Review;
 use Illuminate\Auth\Access\HandlesAuthorization;
 use Illuminate\Foundation\Auth\User as AuthUser;
+use Reyhan\Core\Models\Review;
 
 class ReviewPolicy
 {

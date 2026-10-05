@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\Brands\Pages;
 
-use Reyhan\Core\Filament\Resources\Brands\BrandResource;
 use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
+use Reyhan\Core\Filament\Resources\Brands\BrandResource;
 
 class ListBrands extends ListRecords
 {

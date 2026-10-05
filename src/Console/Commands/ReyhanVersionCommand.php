@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Console\Commands;
 
-use Reyhan\Core\Support\Modules\ModuleManager;
-use Reyhan\Core\Support\Reyhan;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
+use Reyhan\Core\Support\Modules\ModuleManager;
+use Reyhan\Core\Support\Reyhan;
 
 final class ReyhanVersionCommand extends Command
 {

@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\LoyaltyTransactions\Pages;
 
-use Reyhan\Core\Filament\Resources\LoyaltyTransactions\LoyaltyTransactionResource;
-use Reyhan\Core\Models\User;
 use Filament\Actions\Action;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\ListRecords;
+use Reyhan\Core\Filament\Resources\LoyaltyTransactions\LoyaltyTransactionResource;
+use Reyhan\Core\Models\User;
 
 class ListLoyaltyTransactions extends ListRecords
 {

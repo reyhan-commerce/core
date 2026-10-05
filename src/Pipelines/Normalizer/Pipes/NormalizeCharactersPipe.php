@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Pipelines\Normalizer\Pipes;
 
-use Reyhan\Core\Pipelines\Normalizer\Contracts\NormalizerPipeInterface;
 use Closure;
+use Reyhan\Core\Pipelines\Normalizer\Contracts\NormalizerPipeInterface;
 
 final class NormalizeCharactersPipe implements NormalizerPipeInterface
 {

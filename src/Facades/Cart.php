@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Facades;
 
+use Illuminate\Support\Facades\Facade;
 use Reyhan\Core\Models\Cart as CartModel;
 use Reyhan\Core\Models\CartItem;
 use Reyhan\Core\Models\Coupon;
 use Reyhan\Core\Models\User;
 use Reyhan\Core\Services\Cart\CartService;
-use Illuminate\Support\Facades\Facade;
 
 /**
  * @method static CartModel resolveCart(?User $user = null, ?string $sessionId = null)
@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static void removeCoupon(CartModel $cart)
  * @method static CartModel syncGuestCart(User $user, string $sessionId)
  *
- * @see \Reyhan\Core\Services\Cart\CartService
+ * @see CartService
  */
 final class Cart extends Facade
 {

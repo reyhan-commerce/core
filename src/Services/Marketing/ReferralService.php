@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Services\Marketing;
 
+use Illuminate\Support\Facades\DB;
+use Illuminate\Validation\ValidationException;
 use Reyhan\Core\Enums\ReferralStatus;
 use Reyhan\Core\Enums\WalletTransactionType;
 use Reyhan\Core\Models\Order;
 use Reyhan\Core\Models\Referral;
 use Reyhan\Core\Models\User;
 use Reyhan\Core\Services\Wallet\WalletService;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Validation\ValidationException;
 
 final class ReferralService
 {

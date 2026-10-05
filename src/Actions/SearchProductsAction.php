@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Actions;
 
+use Illuminate\Database\Eloquent\Builder;
 use Reyhan\Core\Models\Product;
 use Reyhan\Core\Pipelines\Normalizer\PersianNormalizer;
-use Illuminate\Database\Eloquent\Builder;
 
 final class SearchProductsAction
 {

@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Pages;
 
-use Reyhan\Core\Features\ShopFeature;
-use Reyhan\Core\Http\Controllers\Api\V1\AppFeaturesController;
 use BackedEnum;
 use Filament\Forms\Components\Toggle;
 use Filament\Notifications\Notification;
@@ -15,6 +13,8 @@ use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Illuminate\Support\Facades\Cache;
 use Laravel\Pennant\Feature;
+use Reyhan\Core\Features\ShopFeature;
+use Reyhan\Core\Http\Controllers\Api\V1\AppFeaturesController;
 use UnitEnum;
 
 class ManageFeatureFlags extends Page

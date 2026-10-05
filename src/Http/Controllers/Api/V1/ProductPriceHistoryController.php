@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Controllers\Api\V1;
 
-use Reyhan\Core\Http\Controllers\Controller;
-use Reyhan\Core\Models\Product;
 use Illuminate\Http\JsonResponse;
 use Morilog\Jalali\Jalalian;
+use Reyhan\Core\Http\Controllers\Controller;
+use Reyhan\Core\Models\Product;
 
 final class ProductPriceHistoryController extends Controller
 {

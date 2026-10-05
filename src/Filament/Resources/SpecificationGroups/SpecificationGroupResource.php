@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\SpecificationGroups;
 
-use Reyhan\Core\Filament\Resources\SpecificationGroups\Pages\CreateSpecificationGroup;
-use Reyhan\Core\Filament\Resources\SpecificationGroups\Pages\EditSpecificationGroup;
-use Reyhan\Core\Filament\Resources\SpecificationGroups\Pages\ListSpecificationGroups;
-use Reyhan\Core\Models\SpecificationGroup;
 use BackedEnum;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
@@ -22,6 +18,10 @@ use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+use Reyhan\Core\Filament\Resources\SpecificationGroups\Pages\CreateSpecificationGroup;
+use Reyhan\Core\Filament\Resources\SpecificationGroups\Pages\EditSpecificationGroup;
+use Reyhan\Core\Filament\Resources\SpecificationGroups\Pages\ListSpecificationGroups;
+use Reyhan\Core\Models\SpecificationGroup;
 use UnitEnum;
 
 class SpecificationGroupResource extends Resource

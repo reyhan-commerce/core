@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Actions\Address;
 
+use Illuminate\Support\Facades\DB;
 use Reyhan\Core\Data\Address\UpdateAddressData;
 use Reyhan\Core\Models\Address;
 use Reyhan\Core\Models\User;
-use Illuminate\Support\Facades\DB;
 
 final class UpdateAddressAction
 {

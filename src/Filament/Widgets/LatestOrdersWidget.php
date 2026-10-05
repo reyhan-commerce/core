@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Widgets;
 
-use Reyhan\Core\Enums\OrderStatus;
-use Reyhan\Core\Filament\Resources\Orders\OrderResource;
-use Reyhan\Core\Models\Order;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Filament\Widgets\TableWidget as BaseWidget;
 use Morilog\Jalali\Jalalian;
+use Reyhan\Core\Enums\OrderStatus;
+use Reyhan\Core\Filament\Resources\Orders\OrderResource;
+use Reyhan\Core\Models\Order;
 
 class LatestOrdersWidget extends BaseWidget
 {

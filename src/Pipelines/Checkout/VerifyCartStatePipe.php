@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Pipelines\Checkout;
 
-use Reyhan\Core\Models\Address;
-use Reyhan\Core\Services\Cart\CartService;
 use Closure;
 use Illuminate\Validation\ValidationException;
+use Reyhan\Core\Models\Address;
+use Reyhan\Core\Services\Cart\CartService;
 
 final class VerifyCartStatePipe
 {

@@ -4,15 +4,15 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Controllers\Api\V1;
 
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
+use Illuminate\Support\Str;
+use Morilog\Jalali\Jalalian;
 use Reyhan\Core\Enums\ReferralStatus;
 use Reyhan\Core\Http\Controllers\Controller;
 use Reyhan\Core\Models\Referral;
 use Reyhan\Core\Models\User;
 use Reyhan\Core\Services\Marketing\ReferralService;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
-use Illuminate\Support\Str;
-use Morilog\Jalali\Jalalian;
 
 final class ReferralController extends Controller
 {

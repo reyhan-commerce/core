@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Models;
 
-use Reyhan\Core\Enums\BannerPosition;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Attributes\Guarded;
 use Illuminate\Database\Eloquent\Attributes\Scope;
@@ -12,6 +11,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Reyhan\Core\Enums\BannerPosition;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 

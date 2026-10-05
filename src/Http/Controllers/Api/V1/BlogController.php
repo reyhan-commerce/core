@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Controllers\Api\V1;
 
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 use Reyhan\Core\Http\Controllers\Controller;
 use Reyhan\Core\Http\Resources\V1\BlogCategoryResource;
 use Reyhan\Core\Http\Resources\V1\BlogPostDetailResource;
@@ -11,8 +13,6 @@ use Reyhan\Core\Http\Resources\V1\BlogPostResource;
 use Reyhan\Core\Models\BlogCategory;
 use Reyhan\Core\Models\BlogPost;
 use Reyhan\Core\Pipelines\Normalizer\PersianNormalizer;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
 
 final class BlogController extends Controller
 {

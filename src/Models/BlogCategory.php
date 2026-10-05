@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Models;
 
-use Reyhan\Core\Database\Factories\BlogCategoryFactory;
 use Illuminate\Database\Eloquent\Attributes\Guarded;
 use Illuminate\Database\Eloquent\Attributes\Scope;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Reyhan\Core\Database\Factories\BlogCategoryFactory;
 
 #[Guarded(['id'])]
 class BlogCategory extends Model

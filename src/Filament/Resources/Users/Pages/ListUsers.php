@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\Users\Pages;
 
-use Reyhan\Core\Filament\Resources\Users\UserResource;
 use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
+use Reyhan\Core\Filament\Resources\Users\UserResource;
 
 class ListUsers extends ListRecords
 {

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Controllers\Api\V1;
 
+use Illuminate\Http\JsonResponse;
 use Reyhan\Core\Actions\Review\StoreReviewAction;
 use Reyhan\Core\Data\Review\StoreReviewData;
 use Reyhan\Core\Enums\ReviewStatus;
@@ -13,7 +14,6 @@ use Reyhan\Core\Http\Resources\V1\ReviewResource;
 use Reyhan\Core\Models\Product;
 use Reyhan\Core\Models\Review;
 use Reyhan\Core\Models\User;
-use Illuminate\Http\JsonResponse;
 
 final class ReviewController extends Controller
 {

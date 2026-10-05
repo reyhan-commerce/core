@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Pages;
 
-use Reyhan\Core\Settings\GeneralSettings;
 use BackedEnum;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Repeater;
@@ -16,6 +15,7 @@ use Filament\Schemas\Components\Tabs;
 use Filament\Schemas\Components\Tabs\Tab;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
+use Reyhan\Core\Settings\GeneralSettings;
 use UnitEnum;
 
 class ManageGeneralSettings extends SettingsPage

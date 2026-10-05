@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Policies;
 
+use Illuminate\Auth\Access\HandlesAuthorization;
 use Reyhan\Core\Models\Address;
 use Reyhan\Core\Models\User;
-use Illuminate\Auth\Access\HandlesAuthorization;
 
 class AddressPolicy
 {

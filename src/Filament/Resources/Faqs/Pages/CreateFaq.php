@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\Faqs\Pages;
 
-use Reyhan\Core\Filament\Resources\Faqs\FaqResource;
 use Filament\Resources\Pages\CreateRecord;
+use Reyhan\Core\Filament\Resources\Faqs\FaqResource;
 
 class CreateFaq extends CreateRecord
 {

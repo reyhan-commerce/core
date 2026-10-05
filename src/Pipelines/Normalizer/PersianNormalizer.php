@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Pipelines\Normalizer;
 
+use Illuminate\Support\Facades\Pipeline;
 use Reyhan\Core\Pipelines\Normalizer\Contracts\NormalizerPipeInterface;
 use Reyhan\Core\Pipelines\Normalizer\Pipes\NormalizeCharactersPipe;
 use Reyhan\Core\Pipelines\Normalizer\Pipes\NormalizeDigitsPipe;
 use Reyhan\Core\Pipelines\Normalizer\Pipes\NormalizeZwnjPipe;
-use Illuminate\Support\Facades\Pipeline;
 
 final class PersianNormalizer
 {

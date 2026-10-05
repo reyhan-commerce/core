@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Models;
 
-use Reyhan\Core\Enums\WalletTransactionType;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Attributes\Guarded;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Reyhan\Core\Enums\WalletTransactionType;
 
 /**
  * @property int $id

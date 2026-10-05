@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\BlogCategories;
 
-use Reyhan\Core\Filament\Resources\BlogCategories\Pages\CreateBlogCategory;
-use Reyhan\Core\Filament\Resources\BlogCategories\Pages\EditBlogCategory;
-use Reyhan\Core\Filament\Resources\BlogCategories\Pages\ListBlogCategories;
-use Reyhan\Core\Models\BlogCategory;
 use BackedEnum;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
@@ -25,6 +21,10 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
+use Reyhan\Core\Filament\Resources\BlogCategories\Pages\CreateBlogCategory;
+use Reyhan\Core\Filament\Resources\BlogCategories\Pages\EditBlogCategory;
+use Reyhan\Core\Filament\Resources\BlogCategories\Pages\ListBlogCategories;
+use Reyhan\Core\Models\BlogCategory;
 use UnitEnum;
 
 class BlogCategoryResource extends Resource

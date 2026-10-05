@@ -4,11 +4,6 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\ShippingMethods;
 
-use Reyhan\Core\Filament\Resources\ShippingMethods\Pages\CreateShippingMethod;
-use Reyhan\Core\Filament\Resources\ShippingMethods\Pages\EditShippingMethod;
-use Reyhan\Core\Filament\Resources\ShippingMethods\Pages\ListShippingMethods;
-use Reyhan\Core\Models\Province;
-use Reyhan\Core\Models\ShippingMethod;
 use BackedEnum;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
@@ -26,6 +21,11 @@ use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\ToggleColumn;
 use Filament\Tables\Table;
+use Reyhan\Core\Filament\Resources\ShippingMethods\Pages\CreateShippingMethod;
+use Reyhan\Core\Filament\Resources\ShippingMethods\Pages\EditShippingMethod;
+use Reyhan\Core\Filament\Resources\ShippingMethods\Pages\ListShippingMethods;
+use Reyhan\Core\Models\Province;
+use Reyhan\Core\Models\ShippingMethod;
 use UnitEnum;
 
 class ShippingMethodResource extends Resource

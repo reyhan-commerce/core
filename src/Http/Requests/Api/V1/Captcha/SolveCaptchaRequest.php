@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Requests\Api\V1\Captcha;
 
-use Reyhan\Core\Rules\ValidPoWChallenge;
 use Illuminate\Foundation\Http\FormRequest;
+use Reyhan\Core\Rules\ValidPoWChallenge;
 
 final class SolveCaptchaRequest extends FormRequest
 {

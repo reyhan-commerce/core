@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Controllers\Api\V1;
 
+use Illuminate\Http\JsonResponse;
 use Reyhan\Core\Http\Controllers\Controller;
 use Reyhan\Core\Services\Settings\AppSettingService;
-use Illuminate\Http\JsonResponse;
 
 final class AppSettingController extends Controller
 {

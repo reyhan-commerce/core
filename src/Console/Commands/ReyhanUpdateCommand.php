@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Console\Commands;
 
-use Reyhan\Core\Actions\System\PerformCoreUpdateAction;
 use Illuminate\Console\Command;
+use Reyhan\Core\Actions\System\PerformCoreUpdateAction;
 
 final class ReyhanUpdateCommand extends Command
 {

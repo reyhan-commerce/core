@@ -4,13 +4,6 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\Users;
 
-use Reyhan\Core\Enums\WalletTransactionType;
-use Reyhan\Core\Filament\Resources\Users\Pages\CreateUser;
-use Reyhan\Core\Filament\Resources\Users\Pages\EditUser;
-use Reyhan\Core\Filament\Resources\Users\Pages\ListUsers;
-use Reyhan\Core\Filament\Resources\Users\Pages\ViewUser;
-use Reyhan\Core\Models\User;
-use Reyhan\Core\Services\Wallet\WalletService;
 use BackedEnum;
 use Filament\Actions\Action;
 use Filament\Actions\BulkActionGroup;
@@ -35,6 +28,13 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Morilog\Jalali\Jalalian;
+use Reyhan\Core\Enums\WalletTransactionType;
+use Reyhan\Core\Filament\Resources\Users\Pages\CreateUser;
+use Reyhan\Core\Filament\Resources\Users\Pages\EditUser;
+use Reyhan\Core\Filament\Resources\Users\Pages\ListUsers;
+use Reyhan\Core\Filament\Resources\Users\Pages\ViewUser;
+use Reyhan\Core\Models\User;
+use Reyhan\Core\Services\Wallet\WalletService;
 use UnitEnum;
 
 class UserResource extends Resource

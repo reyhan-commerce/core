@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Reyhan\Core;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use Reyhan\Core\Console\Commands\ReyhanDoctorCommand;
@@ -12,6 +13,12 @@ use Reyhan\Core\Console\Commands\ReyhanUpdateCommand;
 use Reyhan\Core\Console\Commands\ReyhanVersionCommand;
 use Reyhan\Core\Console\Commands\ShopPresetCommand;
 use Reyhan\Core\Console\Commands\SystemUpdateCommand;
+use Reyhan\Core\Models\Admin;
+use Reyhan\Core\Services\Accounting\LedgerService;
+use Reyhan\Core\Services\Cart\CartService;
+use Reyhan\Core\Services\Checkout\CheckoutService;
+use Reyhan\Core\Services\Inventory\StockReservationService;
+use Reyhan\Core\Services\Pricing\PricingService;
 use Reyhan\Core\Support\Reyhan;
 
 class ReyhanServiceProvider extends ServiceProvider
@@ -27,23 +34,23 @@ class ReyhanServiceProvider extends ServiceProvider
             ]),
             'auth.providers.admins' => config('auth.providers.admins', [
                 'driver' => 'eloquent',
-                'model' => \Reyhan\Core\Models\Admin::class,
+                'model' => Admin::class,
             ]),
         ]);
 
-        $this->app->singleton(Reyhan::class, fn () => new Reyhan());
-        $this->app->singleton(\Reyhan\Core\Services\Cart\CartService::class);
-        $this->app->singleton(\Reyhan\Core\Services\Inventory\StockReservationService::class);
-        $this->app->singleton(\Reyhan\Core\Services\Pricing\PricingService::class);
-        $this->app->singleton(\Reyhan\Core\Services\Checkout\CheckoutService::class);
-        $this->app->singleton(\Reyhan\Core\Services\Accounting\LedgerService::class);
+        $this->app->singleton(Reyhan::class, fn () => new Reyhan);
+        $this->app->singleton(CartService::class);
+        $this->app->singleton(StockReservationService::class);
+        $this->app->singleton(PricingService::class);
+        $this->app->singleton(CheckoutService::class);
+        $this->app->singleton(LedgerService::class);
 
         // Aliases for DI and Facade resolution
-        $this->app->alias(\Reyhan\Core\Services\Cart\CartService::class, 'reyhan.cart');
-        $this->app->alias(\Reyhan\Core\Services\Inventory\StockReservationService::class, 'reyhan.inventory');
-        $this->app->alias(\Reyhan\Core\Services\Pricing\PricingService::class, 'reyhan.pricing');
-        $this->app->alias(\Reyhan\Core\Services\Checkout\CheckoutService::class, 'reyhan.checkout');
-        $this->app->alias(\Reyhan\Core\Services\Accounting\LedgerService::class, 'reyhan.ledger');
+        $this->app->alias(CartService::class, 'reyhan.cart');
+        $this->app->alias(StockReservationService::class, 'reyhan.inventory');
+        $this->app->alias(PricingService::class, 'reyhan.pricing');
+        $this->app->alias(CheckoutService::class, 'reyhan.checkout');
+        $this->app->alias(LedgerService::class, 'reyhan.ledger');
 
         $this->app->register(Providers\AppServiceProvider::class);
         $this->app->register(Providers\SmsServiceProvider::class);
@@ -64,10 +71,11 @@ class ReyhanServiceProvider extends ServiceProvider
         $this->loadRoutes();
 
         // Factory name resolver for Core models
-        \Illuminate\Database\Eloquent\Factories\Factory::guessFactoryNamesUsing(function (string $modelName) {
+        Factory::guessFactoryNamesUsing(function (string $modelName) {
             if (str_starts_with($modelName, 'Reyhan\\Core\\Models\\')) {
                 return 'Reyhan\\Core\\Database\\Factories\\'.class_basename($modelName).'Factory';
             }
+
             return 'Database\\Factories\\'.class_basename($modelName).'Factory';
         });
 

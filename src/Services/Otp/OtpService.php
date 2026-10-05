@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Services\Otp;
 
-use Reyhan\Core\Exceptions\Auth\OtpThrottledException;
-use Reyhan\Core\Notifications\Auth\SendOtpNotification;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Facades\Redis;
+use Reyhan\Core\Exceptions\Auth\OtpThrottledException;
+use Reyhan\Core\Notifications\Auth\SendOtpNotification;
 
 class OtpService
 {

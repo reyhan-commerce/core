@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Controllers\Api\V1;
 
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 use Reyhan\Core\Actions\SearchProductsAction;
 use Reyhan\Core\Http\Controllers\Controller;
 use Reyhan\Core\Http\Resources\V1\ProductResource;
@@ -11,8 +13,6 @@ use Reyhan\Core\Models\Brand;
 use Reyhan\Core\Models\Category;
 use Reyhan\Core\Models\Product;
 use Reyhan\Core\Pipelines\Normalizer\PersianNormalizer;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
 
 final class SearchSuggestionController extends Controller
 {

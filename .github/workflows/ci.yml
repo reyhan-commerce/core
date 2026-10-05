@@ -2,13 +2,13 @@ name: Core Package CI
 
 on:
   push:
-    branches: [main]
+    branches: [ "main", "develop" ]
   pull_request:
-    branches: [main]
+    branches: [ "main", "develop" ]
 
 jobs:
-  test:
-    name: PHP ${{ matrix.php }} - Composer Validation
+  validate:
+    name: PHP ${{ matrix.php }} - Composer & Style Validation
     runs-on: ubuntu-latest
 
     strategy:
@@ -20,12 +20,16 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Setup PHP
+      - name: Setup PHP Runtime
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php }}
           extensions: pdo_pgsql, redis, bcmath, intl, mbstring, curl, zip
+          tools: pint
           coverage: none
 
       - name: Validate composer.json
         run: composer validate --strict
+
+      - name: Verify Code Style (Laravel Pint)
+        run: pint --test

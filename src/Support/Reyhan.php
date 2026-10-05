@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Support;
 
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
+use InvalidArgumentException;
 use Reyhan\Core\Contracts\Models\BrandContract;
 use Reyhan\Core\Contracts\Models\CartContract;
 use Reyhan\Core\Contracts\Models\CategoryContract;
@@ -27,9 +30,11 @@ use Reyhan\Core\Models\Review;
 use Reyhan\Core\Models\ShippingMethod;
 use Reyhan\Core\Models\User;
 use Reyhan\Core\Models\Wishlist;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model;
-use InvalidArgumentException;
+use Reyhan\Core\Services\Accounting\LedgerService;
+use Reyhan\Core\Services\Cart\CartService;
+use Reyhan\Core\Services\Checkout\CheckoutService;
+use Reyhan\Core\Services\Inventory\StockReservationService;
+use Reyhan\Core\Services\Pricing\PricingService;
 
 final class Reyhan
 {
@@ -202,40 +207,40 @@ final class Reyhan
     /**
      * Get the core Cart service instance.
      */
-    public static function cart(): \Reyhan\Core\Services\Cart\CartService
+    public static function cart(): CartService
     {
-        return app(\Reyhan\Core\Services\Cart\CartService::class);
+        return app(CartService::class);
     }
 
     /**
      * Get the core Stock/Inventory reservation service instance.
      */
-    public static function inventory(): \Reyhan\Core\Services\Inventory\StockReservationService
+    public static function inventory(): StockReservationService
     {
-        return app(\Reyhan\Core\Services\Inventory\StockReservationService::class);
+        return app(StockReservationService::class);
     }
 
     /**
      * Get the core Pricing service instance.
      */
-    public static function pricing(): \Reyhan\Core\Services\Pricing\PricingService
+    public static function pricing(): PricingService
     {
-        return app(\Reyhan\Core\Services\Pricing\PricingService::class);
+        return app(PricingService::class);
     }
 
     /**
      * Get the core Checkout service instance.
      */
-    public static function checkout(): \Reyhan\Core\Services\Checkout\CheckoutService
+    public static function checkout(): CheckoutService
     {
-        return app(\Reyhan\Core\Services\Checkout\CheckoutService::class);
+        return app(CheckoutService::class);
     }
 
     /**
      * Get the core double-entry accounting Ledger service instance.
      */
-    public static function ledger(): \Reyhan\Core\Services\Accounting\LedgerService
+    public static function ledger(): LedgerService
     {
-        return app(\Reyhan\Core\Services\Accounting\LedgerService::class);
+        return app(LedgerService::class);
     }
 }

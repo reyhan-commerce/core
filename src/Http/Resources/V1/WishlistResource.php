@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Resources\V1;
 
-use Reyhan\Core\Models\Wishlist;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
+use Reyhan\Core\Models\Wishlist;
 
 /**
  * @mixin Wishlist

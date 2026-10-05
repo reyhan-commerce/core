@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Models;
 
-use Reyhan\Core\Contracts\Models\UserContract;
 use BokshornIt\FilamentActivityTimeline\Contracts\ProvidesActivityTitle;
 use Carbon\Carbon;
-use Reyhan\Core\Database\Factories\UserFactory;
 use Illuminate\Database\Eloquent\Attributes\Guarded;
 use Illuminate\Database\Eloquent\Attributes\Hidden;
 use Illuminate\Database\Eloquent\Casts\Attribute;
@@ -22,6 +20,8 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Str;
 use Laravel\Sanctum\HasApiTokens;
+use Reyhan\Core\Contracts\Models\UserContract;
+use Reyhan\Core\Database\Factories\UserFactory;
 use Spatie\Activitylog\Models\Concerns\LogsActivity;
 use Spatie\Activitylog\Support\LogOptions;
 

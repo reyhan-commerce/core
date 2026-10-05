@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\Products\Pages;
 
-use Reyhan\Core\Filament\Resources\Products\ProductResource;
 use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
+use Reyhan\Core\Filament\Resources\Products\ProductResource;
 use Zvizvi\FilamentColumnFilters\Concerns\HasColumnFilters;
 
 class ListProducts extends ListRecords

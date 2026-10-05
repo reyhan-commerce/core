@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Services\Cart;
 
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
+use Illuminate\Validation\ValidationException;
 use Reyhan\Core\Models\Cart;
 use Reyhan\Core\Models\CartItem;
 use Reyhan\Core\Models\Coupon;
 use Reyhan\Core\Models\ProductVariant;
 use Reyhan\Core\Models\User;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Str;
-use Illuminate\Validation\ValidationException;
 use Throwable;
 
 class CartService

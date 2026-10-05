@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Events\Auth;
 
-use Reyhan\Core\Models\User;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
+use Reyhan\Core\Models\User;
 
 final class CustomerRegistered
 {

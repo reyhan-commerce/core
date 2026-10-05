@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\Pages;
 
-use Reyhan\Core\Filament\Resources\Pages\Pages\CreatePage;
-use Reyhan\Core\Filament\Resources\Pages\Pages\EditPage;
-use Reyhan\Core\Filament\Resources\Pages\Pages\ListPages;
-use Reyhan\Core\Models\Page;
 use BackedEnum;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
@@ -27,6 +23,10 @@ use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
+use Reyhan\Core\Filament\Resources\Pages\Pages\CreatePage;
+use Reyhan\Core\Filament\Resources\Pages\Pages\EditPage;
+use Reyhan\Core\Filament\Resources\Pages\Pages\ListPages;
+use Reyhan\Core\Models\Page;
 use UnitEnum;
 
 class PageResource extends Resource

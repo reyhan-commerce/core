@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Models;
 
-use Reyhan\Core\Database\Factories\WishlistFactory;
 use Illuminate\Database\Eloquent\Attributes\Guarded;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Reyhan\Core\Database\Factories\WishlistFactory;
 
 #[Guarded(['id'])]
 class Wishlist extends Model

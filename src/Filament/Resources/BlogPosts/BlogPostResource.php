@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\BlogPosts;
 
-use Reyhan\Core\Filament\Resources\BlogPosts\Pages\CreateBlogPost;
-use Reyhan\Core\Filament\Resources\BlogPosts\Pages\EditBlogPost;
-use Reyhan\Core\Filament\Resources\BlogPosts\Pages\ListBlogPosts;
-use Reyhan\Core\Models\BlogPost;
 use BackedEnum;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
@@ -33,6 +29,10 @@ use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
+use Reyhan\Core\Filament\Resources\BlogPosts\Pages\CreateBlogPost;
+use Reyhan\Core\Filament\Resources\BlogPosts\Pages\EditBlogPost;
+use Reyhan\Core\Filament\Resources\BlogPosts\Pages\ListBlogPosts;
+use Reyhan\Core\Models\BlogPost;
 use UnitEnum;
 
 class BlogPostResource extends Resource

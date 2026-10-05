@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Pipelines\Cart;
 
-use Reyhan\Core\Data\Pricing\CartPricingData;
 use Illuminate\Pipeline\Pipeline;
+use Reyhan\Core\Data\Pricing\CartPricingData;
 
 final class CartCalculationPipeline
 {

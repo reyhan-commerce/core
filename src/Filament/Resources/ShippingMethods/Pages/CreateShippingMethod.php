@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\ShippingMethods\Pages;
 
-use Reyhan\Core\Filament\Resources\ShippingMethods\ShippingMethodResource;
 use Filament\Resources\Pages\CreateRecord;
+use Reyhan\Core\Filament\Resources\ShippingMethods\ShippingMethodResource;
 
 class CreateShippingMethod extends CreateRecord
 {

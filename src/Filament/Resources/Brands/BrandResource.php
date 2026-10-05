@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\Brands;
 
-use Reyhan\Core\Filament\Resources\Brands\Pages\CreateBrand;
-use Reyhan\Core\Filament\Resources\Brands\Pages\EditBrand;
-use Reyhan\Core\Filament\Resources\Brands\Pages\ListBrands;
-use Reyhan\Core\Models\Brand;
 use BackedEnum;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
@@ -27,6 +23,10 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
+use Reyhan\Core\Filament\Resources\Brands\Pages\CreateBrand;
+use Reyhan\Core\Filament\Resources\Brands\Pages\EditBrand;
+use Reyhan\Core\Filament\Resources\Brands\Pages\ListBrands;
+use Reyhan\Core\Models\Brand;
 use UnitEnum;
 
 class BrandResource extends Resource

@@ -4,11 +4,8 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Models;
 
-use Reyhan\Core\Contracts\Models\ProductContract;
-use Reyhan\Core\Enums\ReviewStatus;
 use BokshornIt\FilamentActivityTimeline\Contracts\ProvidesActivityTitle;
 use Carbon\Carbon;
-use Reyhan\Core\Database\Factories\ProductFactory;
 use Illuminate\Database\Eloquent\Attributes\Guarded;
 use Illuminate\Database\Eloquent\Attributes\RouteKey;
 use Illuminate\Database\Eloquent\Attributes\Scope;
@@ -21,6 +18,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Rankbeam\Seo\Traits\HasSEO;
+use Reyhan\Core\Contracts\Models\ProductContract;
+use Reyhan\Core\Database\Factories\ProductFactory;
+use Reyhan\Core\Enums\ReviewStatus;
 use Spatie\Activitylog\Models\Concerns\LogsActivity;
 use Spatie\Activitylog\Support\LogOptions;
 use Spatie\MediaLibrary\HasMedia;

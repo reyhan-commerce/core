@@ -4,18 +4,18 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Controllers\Api\V1;
 
-use Reyhan\Core\Enums\TicketDepartment;
-use Reyhan\Core\Enums\TicketPriority;
-use Reyhan\Core\Enums\TicketStatus;
-use Reyhan\Core\Http\Controllers\Controller;
-use Reyhan\Core\Models\SupportTicket;
-use Reyhan\Core\Models\User;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rules\Enum;
 use Morilog\Jalali\Jalalian;
+use Reyhan\Core\Enums\TicketDepartment;
+use Reyhan\Core\Enums\TicketPriority;
+use Reyhan\Core\Enums\TicketStatus;
+use Reyhan\Core\Http\Controllers\Controller;
+use Reyhan\Core\Models\SupportTicket;
+use Reyhan\Core\Models\User;
 
 final class SupportTicketController extends Controller
 {

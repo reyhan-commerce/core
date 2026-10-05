@@ -4,15 +4,15 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Listeners\Catalog;
 
-use Reyhan\Core\Events\Catalog\ProductRestockedEvent;
-use Reyhan\Core\Models\StockAlert;
-use Reyhan\Core\Notifications\Catalog\StockAlertNotification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Queue\Attributes\Queue;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Notification;
+use Reyhan\Core\Events\Catalog\ProductRestockedEvent;
+use Reyhan\Core\Models\StockAlert;
+use Reyhan\Core\Notifications\Catalog\StockAlertNotification;
 use Throwable;
 
 #[Queue('notifications')]

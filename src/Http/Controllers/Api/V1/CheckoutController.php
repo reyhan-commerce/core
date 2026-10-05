@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Controllers\Api\V1;
 
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 use Reyhan\Core\Actions\Checkout\CreateOrderAction;
 use Reyhan\Core\Data\Checkout\CreateOrderData;
 use Reyhan\Core\Exceptions\Cart\EmptyCartException;
@@ -14,8 +16,6 @@ use Reyhan\Core\Models\User;
 use Reyhan\Core\Services\Cart\CartService;
 use Reyhan\Core\Services\Pricing\PricingService;
 use Reyhan\Core\Services\Shipping\ShippingService;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
 
 final class CheckoutController extends Controller
 {

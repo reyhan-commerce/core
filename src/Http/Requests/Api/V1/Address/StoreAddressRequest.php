@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Requests\Api\V1\Address;
 
+use Illuminate\Foundation\Http\FormRequest;
 use Reyhan\Core\Pipelines\Normalizer\PersianNormalizer;
 use Reyhan\Core\Rules\IranianMobileRule;
 use Reyhan\Core\Rules\PostalCodeRule;
-use Illuminate\Foundation\Http\FormRequest;
 
 final class StoreAddressRequest extends FormRequest
 {

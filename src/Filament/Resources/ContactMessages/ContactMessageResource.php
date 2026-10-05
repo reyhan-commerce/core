@@ -4,9 +4,6 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\ContactMessages;
 
-use Reyhan\Core\Filament\Resources\ContactMessages\Pages\ListContactMessages;
-use Reyhan\Core\Filament\Resources\ContactMessages\Pages\ViewContactMessage;
-use Reyhan\Core\Models\ContactMessage;
 use BackedEnum;
 use Filament\Actions\Action;
 use Filament\Actions\BulkActionGroup;
@@ -23,6 +20,9 @@ use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
+use Reyhan\Core\Filament\Resources\ContactMessages\Pages\ListContactMessages;
+use Reyhan\Core\Filament\Resources\ContactMessages\Pages\ViewContactMessage;
+use Reyhan\Core\Models\ContactMessage;
 use UnitEnum;
 
 class ContactMessageResource extends Resource

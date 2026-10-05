@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Reyhan\Core\Filament\Resources\Categories\Pages;
 
 use Alareqi\FilamentTree\Concerns\InteractsWithTreeTable;
-use Reyhan\Core\Filament\Resources\Categories\CategoryResource;
 use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
+use Reyhan\Core\Filament\Resources\Categories\CategoryResource;
 
 class ListCategories extends ListRecords
 {

@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Pipelines\Checkout;
 
+use Closure;
+use Illuminate\Support\Facades\DB;
 use Reyhan\Core\Enums\OrderStatus;
 use Reyhan\Core\Enums\PaymentGateway;
 use Reyhan\Core\Models\AttributeValue;
@@ -12,8 +14,6 @@ use Reyhan\Core\Models\Order;
 use Reyhan\Core\Models\OrderItem;
 use Reyhan\Core\Models\ProductVariant;
 use Reyhan\Core\Services\Wallet\WalletService;
-use Closure;
-use Illuminate\Support\Facades\DB;
 
 final class PersistOrderRecordPipe
 {

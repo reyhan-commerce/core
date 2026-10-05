@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\Products\RelationManagers;
 
-use Reyhan\Core\Models\ProductVariant;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\CreateAction;
 use Filament\Actions\DeleteAction;
@@ -20,6 +19,7 @@ use Filament\Schemas\Schema;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+use Reyhan\Core\Models\ProductVariant;
 
 class VariantsRelationManager extends RelationManager
 {

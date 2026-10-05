@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\Faqs;
 
-use Reyhan\Core\Filament\Resources\Faqs\Pages\CreateFaq;
-use Reyhan\Core\Filament\Resources\Faqs\Pages\EditFaq;
-use Reyhan\Core\Filament\Resources\Faqs\Pages\ListFaqs;
-use Reyhan\Core\Models\Faq;
 use BackedEnum;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
@@ -25,6 +21,10 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
+use Reyhan\Core\Filament\Resources\Faqs\Pages\CreateFaq;
+use Reyhan\Core\Filament\Resources\Faqs\Pages\EditFaq;
+use Reyhan\Core\Filament\Resources\Faqs\Pages\ListFaqs;
+use Reyhan\Core\Models\Faq;
 use UnitEnum;
 
 class FaqResource extends Resource

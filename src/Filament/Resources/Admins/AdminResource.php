@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\Admins;
 
-use Reyhan\Core\Filament\Resources\Admins\Pages\CreateAdmin;
-use Reyhan\Core\Filament\Resources\Admins\Pages\EditAdmin;
-use Reyhan\Core\Filament\Resources\Admins\Pages\ListAdmins;
-use Reyhan\Core\Models\Admin;
 use BackedEnum;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
@@ -28,6 +24,10 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Illuminate\Support\Facades\Hash;
 use Morilog\Jalali\Jalalian;
+use Reyhan\Core\Filament\Resources\Admins\Pages\CreateAdmin;
+use Reyhan\Core\Filament\Resources\Admins\Pages\EditAdmin;
+use Reyhan\Core\Filament\Resources\Admins\Pages\ListAdmins;
+use Reyhan\Core\Models\Admin;
 use UnitEnum;
 
 class AdminResource extends Resource

@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\Brands\Pages;
 
-use Reyhan\Core\Filament\Resources\Brands\BrandResource;
 use Filament\Actions\DeleteAction;
 use Filament\Resources\Pages\EditRecord;
+use Reyhan\Core\Filament\Resources\Brands\BrandResource;
 
 class EditBrand extends EditRecord
 {

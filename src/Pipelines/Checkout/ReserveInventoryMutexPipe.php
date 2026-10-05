@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Pipelines\Checkout;
 
-use Reyhan\Core\Services\Inventory\StockReservationService;
 use Closure;
 use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException;
+use Reyhan\Core\Services\Inventory\StockReservationService;
 
 final class ReserveInventoryMutexPipe
 {

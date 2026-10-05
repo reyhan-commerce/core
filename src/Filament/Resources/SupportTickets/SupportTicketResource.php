@@ -4,11 +4,6 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\SupportTickets;
 
-use Reyhan\Core\Enums\TicketDepartment;
-use Reyhan\Core\Enums\TicketStatus;
-use Reyhan\Core\Filament\Resources\SupportTickets\Pages\ListSupportTickets;
-use Reyhan\Core\Filament\Resources\SupportTickets\Pages\ViewSupportTicket;
-use Reyhan\Core\Models\SupportTicket;
 use BackedEnum;
 use Filament\Actions\Action;
 use Filament\Actions\BulkActionGroup;
@@ -26,6 +21,11 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 use Morilog\Jalali\Jalalian;
+use Reyhan\Core\Enums\TicketDepartment;
+use Reyhan\Core\Enums\TicketStatus;
+use Reyhan\Core\Filament\Resources\SupportTickets\Pages\ListSupportTickets;
+use Reyhan\Core\Filament\Resources\SupportTickets\Pages\ViewSupportTicket;
+use Reyhan\Core\Models\SupportTicket;
 use UnitEnum;
 
 class SupportTicketResource extends Resource

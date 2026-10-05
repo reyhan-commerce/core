@@ -4,11 +4,6 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\Attributes;
 
-use Reyhan\Core\Enums\AttributeType;
-use Reyhan\Core\Filament\Resources\Attributes\Pages\CreateAttribute;
-use Reyhan\Core\Filament\Resources\Attributes\Pages\EditAttribute;
-use Reyhan\Core\Filament\Resources\Attributes\Pages\ListAttributes;
-use Reyhan\Core\Models\Attribute;
 use BackedEnum;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
@@ -25,6 +20,11 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
+use Reyhan\Core\Enums\AttributeType;
+use Reyhan\Core\Filament\Resources\Attributes\Pages\CreateAttribute;
+use Reyhan\Core\Filament\Resources\Attributes\Pages\EditAttribute;
+use Reyhan\Core\Filament\Resources\Attributes\Pages\ListAttributes;
+use Reyhan\Core\Models\Attribute;
 use UnitEnum;
 
 class AttributeResource extends Resource

@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\Admins\Pages;
 
-use Reyhan\Core\Filament\Resources\Admins\AdminResource;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\ForceDeleteAction;
 use Filament\Actions\RestoreAction;
 use Filament\Resources\Pages\EditRecord;
+use Reyhan\Core\Filament\Resources\Admins\AdminResource;
 
 class EditAdmin extends EditRecord
 {

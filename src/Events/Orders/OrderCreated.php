@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Events\Orders;
 
-use Reyhan\Core\Models\Order;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
+use Reyhan\Core\Models\Order;
 
 final class OrderCreated
 {

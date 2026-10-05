@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Controllers\Api\V1;
 
-use Reyhan\Core\Http\Controllers\Controller;
-use Reyhan\Core\Models\Banner;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Reyhan\Core\Http\Controllers\Controller;
+use Reyhan\Core\Models\Banner;
 
 final class BannerController extends Controller
 {

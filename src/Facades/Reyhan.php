@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Facades;
 
-use Reyhan\Core\Support\Reyhan as ReyhanSupport;
 use Illuminate\Support\Facades\Facade;
+use Reyhan\Core\Support\Reyhan as ReyhanSupport;
 
 /**
  * @method static string version()
@@ -25,7 +25,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static \Reyhan\Core\Services\Pricing\PricingService pricing()
  * @method static \Reyhan\Core\Services\Checkout\CheckoutService checkout()
  *
- * @see \Reyhan\Core\Support\Reyhan
+ * @see ReyhanSupport
  */
 final class Reyhan extends Facade
 {

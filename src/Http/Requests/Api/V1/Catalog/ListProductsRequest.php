@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Requests\Api\V1\Catalog;
 
-use Reyhan\Core\Enums\ProductSortOption;
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
+use Reyhan\Core\Enums\ProductSortOption;
 
 final class ListProductsRequest extends FormRequest
 {

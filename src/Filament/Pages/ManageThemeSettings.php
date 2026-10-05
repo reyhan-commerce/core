@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Pages;
 
-use Reyhan\Core\Settings\ThemeSettings;
 use BackedEnum;
 use Filament\Forms\Components\ColorPicker;
 use Filament\Forms\Components\FileUpload;
@@ -14,6 +13,7 @@ use Filament\Schemas\Components\Tabs;
 use Filament\Schemas\Components\Tabs\Tab;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
+use Reyhan\Core\Settings\ThemeSettings;
 use UnitEnum;
 
 class ManageThemeSettings extends SettingsPage

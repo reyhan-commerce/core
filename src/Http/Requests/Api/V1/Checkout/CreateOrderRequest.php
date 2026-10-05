@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Requests\Api\V1\Checkout;
 
+use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rules\Enum;
 use Reyhan\Core\Enums\PaymentGateway;
 use Reyhan\Core\Pipelines\Normalizer\PersianNormalizer;
 use Reyhan\Core\Rules\CardNumberRule;
 use Reyhan\Core\Rules\CompanyNationalIdRule;
 use Reyhan\Core\Rules\IranianPhoneRule;
-use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Validation\Rules\Enum;
 
 final class CreateOrderRequest extends FormRequest
 {

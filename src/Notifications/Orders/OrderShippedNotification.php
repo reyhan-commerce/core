@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Notifications\Orders;
 
-use Reyhan\Core\Models\Order;
-use Reyhan\Core\Notifications\Channels\SmsChannel;
-use Reyhan\Core\Notifications\Messages\SmsMessage;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Notification;
+use Reyhan\Core\Models\Order;
+use Reyhan\Core\Notifications\Channels\SmsChannel;
+use Reyhan\Core\Notifications\Messages\SmsMessage;
 
 class OrderShippedNotification extends Notification implements ShouldQueue
 {

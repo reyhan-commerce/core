@@ -5,13 +5,6 @@ declare(strict_types=1);
 namespace Reyhan\Core\Filament\Resources\Products;
 
 use Alareqi\FilamentTree\Forms\Components\TreeSelect;
-use Reyhan\Core\Filament\Resources\Products\Pages\CreateProduct;
-use Reyhan\Core\Filament\Resources\Products\Pages\EditProduct;
-use Reyhan\Core\Filament\Resources\Products\Pages\ListProducts;
-use Reyhan\Core\Filament\Resources\Products\RelationManagers\VariantsRelationManager;
-use Reyhan\Core\Models\Category;
-use Reyhan\Core\Models\Product;
-use Reyhan\Core\Models\Specification;
 use BackedEnum;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
@@ -43,6 +36,13 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Illuminate\Support\Str;
 use Morilog\Jalali\Jalalian;
 use Rankbeam\Seo\Filament\Concerns\HasSEOFields;
+use Reyhan\Core\Filament\Resources\Products\Pages\CreateProduct;
+use Reyhan\Core\Filament\Resources\Products\Pages\EditProduct;
+use Reyhan\Core\Filament\Resources\Products\Pages\ListProducts;
+use Reyhan\Core\Filament\Resources\Products\RelationManagers\VariantsRelationManager;
+use Reyhan\Core\Models\Category;
+use Reyhan\Core\Models\Product;
+use Reyhan\Core\Models\Specification;
 use UnitEnum;
 use Zvizvi\FilamentColumnFilters\Filters\ColumnFilter;
 

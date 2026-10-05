@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Controllers\Api\V1;
 
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 use Reyhan\Core\Actions\Profile\UpdateProfileAction;
 use Reyhan\Core\Data\Profile\UpdateProfileData;
 use Reyhan\Core\Http\Controllers\Controller;
 use Reyhan\Core\Http\Requests\Api\V1\Profile\UpdateProfileRequest;
 use Reyhan\Core\Http\Resources\V1\UserResource;
 use Reyhan\Core\Models\User;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
 
 final class ProfileController extends Controller
 {

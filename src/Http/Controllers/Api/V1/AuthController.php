@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Controllers\Api\V1;
 
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 use Reyhan\Core\Exceptions\User\UserDeactivatedException;
 use Reyhan\Core\Http\Controllers\Controller;
 use Reyhan\Core\Http\Requests\Api\V1\Auth\RequestOtpRequest;
@@ -12,8 +14,6 @@ use Reyhan\Core\Http\Resources\V1\UserResource;
 use Reyhan\Core\Models\User;
 use Reyhan\Core\Services\Otp\OtpService;
 use Reyhan\Core\Services\User\UserService;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
 
 final class AuthController extends Controller
 {

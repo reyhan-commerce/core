@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\SpecificationGroups\Pages;
 
-use Reyhan\Core\Filament\Resources\SpecificationGroups\SpecificationGroupResource;
 use Filament\Actions\DeleteAction;
 use Filament\Resources\Pages\EditRecord;
+use Reyhan\Core\Filament\Resources\SpecificationGroups\SpecificationGroupResource;
 
 class EditSpecificationGroup extends EditRecord
 {

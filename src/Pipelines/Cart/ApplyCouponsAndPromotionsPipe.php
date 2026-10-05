@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Reyhan\Core\Pipelines\Cart;
 
 use Closure;
+use Illuminate\Database\Eloquent\Collection;
 use Reyhan\Core\Enums\CouponScope;
 use Reyhan\Core\Enums\CouponType;
 use Reyhan\Core\Models\CartItem;
@@ -38,7 +39,7 @@ final class ApplyCouponsAndPromotionsPipe
     }
 
     /**
-     * @param  \Illuminate\Database\Eloquent\Collection<int, CartItem>  $items
+     * @param  Collection<int, CartItem>  $items
      */
     private function calculateEligibleSubtotal($items, Coupon $coupon): int
     {

@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Controllers\Api\V1\Integrations;
 
-use Reyhan\Core\Http\Controllers\Controller;
-use Reyhan\Core\Models\Product;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Reyhan\Core\Http\Controllers\Controller;
+use Reyhan\Core\Models\Product;
 
 final class EmallsProductFeedController extends Controller
 {

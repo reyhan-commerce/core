@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Services\Payment;
 
+use Illuminate\Support\Manager;
 use Reyhan\Core\Enums\PaymentGateway;
 use Reyhan\Core\Services\Payment\Contracts\PaymentDriverInterface;
 use Reyhan\Core\Services\Payment\Drivers\BehpardakhtDriver;
@@ -14,7 +15,6 @@ use Reyhan\Core\Services\Payment\Drivers\SnappPayDriver;
 use Reyhan\Core\Services\Payment\Drivers\WalletDriver;
 use Reyhan\Core\Services\Payment\Drivers\ZarinpalDriver;
 use Reyhan\Core\Services\Wallet\WalletService;
-use Illuminate\Support\Manager;
 
 class PaymentManager extends Manager
 {

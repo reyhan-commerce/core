@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Resources\V1;
 
-use Reyhan\Core\Models\Attribute;
-use Reyhan\Core\Models\AttributeValue;
-use Reyhan\Core\Models\Category;
 use Illuminate\Database\Eloquent\Relations\Pivot;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
+use Reyhan\Core\Models\Attribute;
+use Reyhan\Core\Models\AttributeValue;
+use Reyhan\Core\Models\Category;
 
 /**
  * @mixin Category

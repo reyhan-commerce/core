@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Reyhan\Core\Models;
 
 use Carbon\Carbon;
-use Reyhan\Core\Database\Factories\ShippingMethodFactory;
 use Illuminate\Database\Eloquent\Attributes\Guarded;
 use Illuminate\Database\Eloquent\Attributes\Scope;
 use Illuminate\Database\Eloquent\Builder;
@@ -14,6 +13,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Reyhan\Core\Database\Factories\ShippingMethodFactory;
 
 /**
  * @property int $id

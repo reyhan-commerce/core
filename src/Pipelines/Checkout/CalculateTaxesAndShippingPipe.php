@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Pipelines\Checkout;
 
+use BackedEnum;
+use Closure;
 use Reyhan\Core\Services\Pricing\PricingService;
 use Reyhan\Core\Services\Shipping\ShippingService;
 use Reyhan\Core\Services\Wallet\WalletService;
-use BackedEnum;
-use Closure;
 
 final class CalculateTaxesAndShippingPipe
 {

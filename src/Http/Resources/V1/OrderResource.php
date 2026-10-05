@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Resources\V1;
 
-use Reyhan\Core\Enums\ShippingMethod as ShippingMethodEnum;
-use Reyhan\Core\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Morilog\Jalali\Jalalian;
+use Reyhan\Core\Enums\ShippingMethod as ShippingMethodEnum;
+use Reyhan\Core\Models\Order;
 
 /**
  * @mixin Order

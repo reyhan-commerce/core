@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Controllers\Api\V1;
 
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
+use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Illuminate\Support\Facades\Gate;
 use Reyhan\Core\Actions\Address\DeleteAddressAction;
 use Reyhan\Core\Actions\Address\SetDefaultAddressAction;
 use Reyhan\Core\Actions\Address\StoreAddressAction;
@@ -16,10 +20,6 @@ use Reyhan\Core\Http\Requests\Api\V1\Address\UpdateAddressRequest;
 use Reyhan\Core\Http\Resources\V1\AddressResource;
 use Reyhan\Core\Models\Address;
 use Reyhan\Core\Models\User;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
-use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
-use Illuminate\Support\Facades\Gate;
 
 final class AddressController extends Controller
 {

@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\BlogPosts\Pages;
 
-use Reyhan\Core\Filament\Resources\BlogPosts\BlogPostResource;
 use Filament\Actions\DeleteAction;
 use Filament\Resources\Pages\EditRecord;
+use Reyhan\Core\Filament\Resources\BlogPosts\BlogPostResource;
 
 class EditBlogPost extends EditRecord
 {

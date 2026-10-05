@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Enums;
 
-use Reyhan\Core\Enums\Concerns\HasEnumHelpers;
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasLabel;
+use Reyhan\Core\Enums\Concerns\HasEnumHelpers;
 
 enum TicketPriority: string implements HasColor, HasLabel
 {

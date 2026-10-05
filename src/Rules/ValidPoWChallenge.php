@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Rules;
 
-use Reyhan\Core\Services\Captcha\CaptchaService;
 use Closure;
 use Illuminate\Contracts\Validation\DataAwareRule;
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Translation\PotentiallyTranslatedString;
+use Reyhan\Core\Services\Captcha\CaptchaService;
 
 class ValidPoWChallenge implements DataAwareRule, ValidationRule
 {

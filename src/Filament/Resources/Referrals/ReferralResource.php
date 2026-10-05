@@ -4,9 +4,6 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\Referrals;
 
-use Reyhan\Core\Enums\ReferralStatus;
-use Reyhan\Core\Filament\Resources\Referrals\Pages\ListReferrals;
-use Reyhan\Core\Models\Referral;
 use BackedEnum;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
@@ -16,6 +13,9 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 use Morilog\Jalali\Jalalian;
+use Reyhan\Core\Enums\ReferralStatus;
+use Reyhan\Core\Filament\Resources\Referrals\Pages\ListReferrals;
+use Reyhan\Core\Models\Referral;
 use UnitEnum;
 
 class ReferralResource extends Resource

@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Events\Orders;
 
-use Reyhan\Core\Models\Order;
-use Reyhan\Core\Models\Payment;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
+use Reyhan\Core\Models\Order;
+use Reyhan\Core\Models\Payment;
 
 final class OrderPaid
 {

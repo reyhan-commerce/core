@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Reyhan\Core\Models;
 
 use Carbon\Carbon;
-use Reyhan\Core\Database\Factories\BlogPostFactory;
 use Illuminate\Database\Eloquent\Attributes\Guarded;
 use Illuminate\Database\Eloquent\Attributes\Scope;
 use Illuminate\Database\Eloquent\Builder;
@@ -14,6 +13,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Rankbeam\Seo\Traits\HasSEO;
+use Reyhan\Core\Database\Factories\BlogPostFactory;
 
 /**
  * @property Carbon|null $published_at

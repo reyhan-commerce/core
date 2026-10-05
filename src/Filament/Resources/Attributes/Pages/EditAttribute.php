@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\Attributes\Pages;
 
-use Reyhan\Core\Filament\Resources\Attributes\AttributeResource;
 use Filament\Actions\DeleteAction;
 use Filament\Resources\Pages\EditRecord;
+use Reyhan\Core\Filament\Resources\Attributes\AttributeResource;
 
 class EditAttribute extends EditRecord
 {

@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Controllers\Api\V1;
 
+use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\Cache;
 use Reyhan\Core\Http\Controllers\Controller;
 use Reyhan\Core\Http\Resources\V1\PageResource;
 use Reyhan\Core\Models\Category;
 use Reyhan\Core\Models\Page;
 use Reyhan\Core\Models\Product;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Support\Facades\Cache;
 
 final class PageController extends Controller
 {

@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Rules;
 
-use Reyhan\Core\Services\Otp\OtpService;
 use Closure;
 use Illuminate\Contracts\Validation\DataAwareRule;
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Translation\PotentiallyTranslatedString;
+use Reyhan\Core\Services\Otp\OtpService;
 
 class ValidOtp implements DataAwareRule, ValidationRule
 {

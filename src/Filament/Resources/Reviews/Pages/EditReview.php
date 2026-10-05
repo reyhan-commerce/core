@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\Reviews\Pages;
 
-use Reyhan\Core\Filament\Resources\Reviews\ReviewResource;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\ViewAction;
 use Filament\Resources\Pages\EditRecord;
+use Reyhan\Core\Filament\Resources\Reviews\ReviewResource;
 
 class EditReview extends EditRecord
 {

@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Reyhan\Core\Models;
 
 use BokshornIt\FilamentActivityTimeline\Contracts\ProvidesActivityTitle;
-use Reyhan\Core\Database\Factories\AdminFactory;
 use Filament\Models\Contracts\FilamentUser;
 use Filament\Models\Contracts\HasName;
 use Filament\Panel;
@@ -15,6 +14,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Reyhan\Core\Database\Factories\AdminFactory;
 use Spatie\Activitylog\Models\Concerns\LogsActivity;
 use Spatie\Activitylog\Support\LogOptions;
 use Spatie\Permission\Traits\HasRoles;

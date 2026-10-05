@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\Admins\Pages;
 
-use Reyhan\Core\Filament\Resources\Admins\AdminResource;
 use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
+use Reyhan\Core\Filament\Resources\Admins\AdminResource;
 
 class ListAdmins extends ListRecords
 {

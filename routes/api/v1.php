@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use Illuminate\Support\Facades\Route;
 use Reyhan\Core\Http\Controllers\Api\V1\AddressController;
 use Reyhan\Core\Http\Controllers\Api\V1\AppFeaturesController;
 use Reyhan\Core\Http\Controllers\Api\V1\AppSettingController;
@@ -21,6 +22,8 @@ use Reyhan\Core\Http\Controllers\Api\V1\CompareProductsController;
 use Reyhan\Core\Http\Controllers\Api\V1\ContactMessageController;
 use Reyhan\Core\Http\Controllers\Api\V1\FaqController;
 use Reyhan\Core\Http\Controllers\Api\V1\GeoController;
+use Reyhan\Core\Http\Controllers\Api\V1\Integrations\EmallsProductFeedController;
+use Reyhan\Core\Http\Controllers\Api\V1\Integrations\TorobProductFeedController;
 use Reyhan\Core\Http\Controllers\Api\V1\LoyaltyController;
 use Reyhan\Core\Http\Controllers\Api\V1\OrderController;
 use Reyhan\Core\Http\Controllers\Api\V1\OrderInvoiceController;
@@ -38,7 +41,6 @@ use Reyhan\Core\Http\Controllers\Api\V1\StockAlertController;
 use Reyhan\Core\Http\Controllers\Api\V1\SupportTicketController;
 use Reyhan\Core\Http\Controllers\Api\V1\WalletController;
 use Reyhan\Core\Http\Controllers\Api\V1\WishlistController;
-use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -221,7 +223,6 @@ Route::prefix('blog')->name('blog.')->group(function () {
 
 // Marketplace Product Feeds (Torob & Emalls)
 Route::prefix('integrations')->name('integrations.')->group(function () {
-    Route::get('/torob/products', \Reyhan\Core\Http\Controllers\Api\V1\Integrations\TorobProductFeedController::class)->name('torob.products');
-    Route::get('/emalls/products', \Reyhan\Core\Http\Controllers\Api\V1\Integrations\EmallsProductFeedController::class)->name('emalls.products');
+    Route::get('/torob/products', TorobProductFeedController::class)->name('torob.products');
+    Route::get('/emalls/products', EmallsProductFeedController::class)->name('emalls.products');
 });
-

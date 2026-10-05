@@ -6,10 +6,6 @@ namespace Reyhan\Core\Filament\Resources\Categories;
 
 use Alareqi\FilamentTree\Columns\TreeColumn;
 use Alareqi\FilamentTree\Forms\Components\TreeSelect;
-use Reyhan\Core\Filament\Resources\Categories\Pages\CreateCategory;
-use Reyhan\Core\Filament\Resources\Categories\Pages\EditCategory;
-use Reyhan\Core\Filament\Resources\Categories\Pages\ListCategories;
-use Reyhan\Core\Models\Category;
 use BackedEnum;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
@@ -30,6 +26,10 @@ use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
+use Reyhan\Core\Filament\Resources\Categories\Pages\CreateCategory;
+use Reyhan\Core\Filament\Resources\Categories\Pages\EditCategory;
+use Reyhan\Core\Filament\Resources\Categories\Pages\ListCategories;
+use Reyhan\Core\Models\Category;
 use UnitEnum;
 
 class CategoryResource extends Resource

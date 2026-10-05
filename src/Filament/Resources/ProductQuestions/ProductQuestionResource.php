@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\ProductQuestions;
 
-use Reyhan\Core\Filament\Resources\ProductQuestions\Pages\ListProductQuestions;
-use Reyhan\Core\Models\ProductQuestion;
 use BackedEnum;
 use Filament\Actions\Action;
 use Filament\Actions\BulkActionGroup;
@@ -19,6 +17,8 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
 use Morilog\Jalali\Jalalian;
+use Reyhan\Core\Filament\Resources\ProductQuestions\Pages\ListProductQuestions;
+use Reyhan\Core\Models\ProductQuestion;
 use UnitEnum;
 
 class ProductQuestionResource extends Resource

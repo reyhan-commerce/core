@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Models;
 
-use Reyhan\Core\Database\Factories\ContactMessageFactory;
 use Illuminate\Database\Eloquent\Attributes\Guarded;
 use Illuminate\Database\Eloquent\Attributes\Scope;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Reyhan\Core\Database\Factories\ContactMessageFactory;
 
 #[Guarded(['id'])]
 class ContactMessage extends Model

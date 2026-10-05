@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Models;
 
-use Reyhan\Core\Enums\TicketDepartment;
-use Reyhan\Core\Enums\TicketPriority;
-use Reyhan\Core\Enums\TicketStatus;
 use Illuminate\Database\Eloquent\Attributes\Guarded;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Reyhan\Core\Enums\TicketDepartment;
+use Reyhan\Core\Enums\TicketPriority;
+use Reyhan\Core\Enums\TicketStatus;
 
 #[Guarded(['id'])]
 final class SupportTicket extends Model

@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Controllers\Api\V1;
 
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
+use Morilog\Jalali\Jalalian;
 use Reyhan\Core\Http\Controllers\Controller;
 use Reyhan\Core\Models\Product;
 use Reyhan\Core\Models\ProductAnswer;
 use Reyhan\Core\Models\ProductQuestion;
 use Reyhan\Core\Models\User;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
-use Morilog\Jalali\Jalalian;
 
 final class ProductQuestionController extends Controller
 {

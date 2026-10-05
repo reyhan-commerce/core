@@ -1,6 +1,22 @@
 <?php
 
 declare(strict_types=1);
+use Reyhan\Core\Models\Address;
+use Reyhan\Core\Models\Admin;
+use Reyhan\Core\Models\Brand;
+use Reyhan\Core\Models\Cart;
+use Reyhan\Core\Models\CartItem;
+use Reyhan\Core\Models\Category;
+use Reyhan\Core\Models\Coupon;
+use Reyhan\Core\Models\Order;
+use Reyhan\Core\Models\OrderItem;
+use Reyhan\Core\Models\Payment;
+use Reyhan\Core\Models\Product;
+use Reyhan\Core\Models\ProductVariant;
+use Reyhan\Core\Models\Review;
+use Reyhan\Core\Models\ShippingMethod;
+use Reyhan\Core\Models\User;
+use Reyhan\Core\Models\Wishlist;
 
 return [
 
@@ -28,22 +44,22 @@ return [
     */
 
     'models' => [
-        'product' => \Reyhan\Core\Models\Product::class,
-        'product_variant' => \Reyhan\Core\Models\ProductVariant::class,
-        'category' => \Reyhan\Core\Models\Category::class,
-        'brand' => \Reyhan\Core\Models\Brand::class,
-        'order' => \Reyhan\Core\Models\Order::class,
-        'order_item' => \Reyhan\Core\Models\OrderItem::class,
-        'cart' => \Reyhan\Core\Models\Cart::class,
-        'cart_item' => \Reyhan\Core\Models\CartItem::class,
-        'user' => \Reyhan\Core\Models\User::class,
-        'admin' => \Reyhan\Core\Models\Admin::class,
-        'address' => \Reyhan\Core\Models\Address::class,
-        'coupon' => \Reyhan\Core\Models\Coupon::class,
-        'review' => \Reyhan\Core\Models\Review::class,
-        'payment' => \Reyhan\Core\Models\Payment::class,
-        'shipping_method' => \Reyhan\Core\Models\ShippingMethod::class,
-        'wishlist' => \Reyhan\Core\Models\Wishlist::class,
+        'product' => Product::class,
+        'product_variant' => ProductVariant::class,
+        'category' => Category::class,
+        'brand' => Brand::class,
+        'order' => Order::class,
+        'order_item' => OrderItem::class,
+        'cart' => Cart::class,
+        'cart_item' => CartItem::class,
+        'user' => User::class,
+        'admin' => Admin::class,
+        'address' => Address::class,
+        'coupon' => Coupon::class,
+        'review' => Review::class,
+        'payment' => Payment::class,
+        'shipping_method' => ShippingMethod::class,
+        'wishlist' => Wishlist::class,
     ],
 
     /*

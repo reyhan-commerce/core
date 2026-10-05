@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Services\Integrations\FarazSms;
 
-use Reyhan\Core\Settings\SmsSettings;
 use Illuminate\Http\Client\PendingRequest;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
+use Reyhan\Core\Settings\SmsSettings;
 
 class FarazSmsClient
 {

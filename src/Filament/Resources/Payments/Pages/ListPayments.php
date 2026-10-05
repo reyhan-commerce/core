@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\Payments\Pages;
 
-use Reyhan\Core\Filament\Resources\Payments\PaymentResource;
 use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
+use Reyhan\Core\Filament\Resources\Payments\PaymentResource;
 
 class ListPayments extends ListRecords
 {

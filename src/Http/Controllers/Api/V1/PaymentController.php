@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Controllers\Api\V1;
 
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 use Reyhan\Core\Actions\Payment\VerifyPaymentAction;
 use Reyhan\Core\Http\Controllers\Controller;
 use Reyhan\Core\Services\Payment\PaymentManager;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
 
 final class PaymentController extends Controller
 {

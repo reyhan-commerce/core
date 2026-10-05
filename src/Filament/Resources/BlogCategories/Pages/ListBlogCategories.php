@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\BlogCategories\Pages;
 
-use Reyhan\Core\Filament\Resources\BlogCategories\BlogCategoryResource;
 use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
+use Reyhan\Core\Filament\Resources\BlogCategories\BlogCategoryResource;
 
 class ListBlogCategories extends ListRecords
 {

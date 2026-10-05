@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Controllers\Api\V1;
 
-use Reyhan\Core\Features\ShopFeature;
-use Reyhan\Core\Http\Controllers\Controller;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Cache;
 use Laravel\Pennant\Feature;
+use Reyhan\Core\Features\ShopFeature;
+use Reyhan\Core\Http\Controllers\Controller;
 
 final class AppFeaturesController extends Controller
 {

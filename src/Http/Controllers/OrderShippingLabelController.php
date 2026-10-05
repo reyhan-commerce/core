@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Controllers;
 
-use Reyhan\Core\Models\Order;
-use Reyhan\Core\Settings\GeneralSettings;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\URL;
+use Reyhan\Core\Models\Order;
+use Reyhan\Core\Settings\GeneralSettings;
 
 final class OrderShippingLabelController extends Controller
 {

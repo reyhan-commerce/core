@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Services\Settings;
 
+use Illuminate\Support\Facades\Cache;
 use Reyhan\Core\Settings\GeneralSettings;
 use Reyhan\Core\Settings\ThemeSettings;
-use Illuminate\Support\Facades\Cache;
 
 class AppSettingService
 {

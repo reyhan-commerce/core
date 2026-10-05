@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Requests\Api\V1\Loyalty;
 
-use Reyhan\Core\Pipelines\Normalizer\PersianNormalizer;
 use Illuminate\Foundation\Http\FormRequest;
+use Reyhan\Core\Pipelines\Normalizer\PersianNormalizer;
 
 final class RedeemLoyaltyPointsRequest extends FormRequest
 {

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Pipelines\Checkout;
 
-use Reyhan\Core\Data\Checkout\CreateOrderResultData;
 use Illuminate\Pipeline\Pipeline;
+use Reyhan\Core\Data\Checkout\CreateOrderResultData;
 
 final class OrderCreationPipeline
 {
@@ -72,6 +72,7 @@ final class OrderCreationPipeline
         foreach (self::$pipes as $key => $pipe) {
             if ($pipe === $target) {
                 self::$pipes[$key] = $replacement;
+
                 return;
             }
         }

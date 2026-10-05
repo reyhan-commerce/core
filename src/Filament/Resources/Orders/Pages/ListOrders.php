@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\Orders\Pages;
 
-use Reyhan\Core\Filament\Resources\Orders\OrderResource;
 use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
+use Reyhan\Core\Filament\Resources\Orders\OrderResource;
 use Zvizvi\FilamentColumnFilters\Concerns\HasColumnFilters;
 
 class ListOrders extends ListRecords

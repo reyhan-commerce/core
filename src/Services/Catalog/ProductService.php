@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Services\Catalog;
 
+use Illuminate\Contracts\Pagination\LengthAwarePaginator;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
 use Reyhan\Core\Actions\SearchProductsAction;
 use Reyhan\Core\Data\Catalog\ProductFilterData;
 use Reyhan\Core\Models\Category;
 use Reyhan\Core\Models\Product;
 use Reyhan\Core\Models\ProductVariant;
-use Illuminate\Contracts\Pagination\LengthAwarePaginator;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Collection;
 
 final class ProductService
 {

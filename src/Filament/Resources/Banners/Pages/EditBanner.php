@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\Banners\Pages;
 
-use Reyhan\Core\Filament\Resources\Banners\BannerResource;
 use Filament\Actions\DeleteAction;
 use Filament\Resources\Pages\EditRecord;
+use Reyhan\Core\Filament\Resources\Banners\BannerResource;
 
 class EditBanner extends EditRecord
 {

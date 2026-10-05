@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Services\Inventory;
 
-use Reyhan\Core\Models\ProductVariant;
 use Illuminate\Support\Facades\Redis;
+use Reyhan\Core\Models\ProductVariant;
 
 class StockReservationService
 {

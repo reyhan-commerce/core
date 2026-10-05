@@ -4,12 +4,6 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\Coupons;
 
-use Reyhan\Core\Enums\CouponScope;
-use Reyhan\Core\Enums\CouponType;
-use Reyhan\Core\Filament\Resources\Coupons\Pages\CreateCoupon;
-use Reyhan\Core\Filament\Resources\Coupons\Pages\EditCoupon;
-use Reyhan\Core\Filament\Resources\Coupons\Pages\ListCoupons;
-use Reyhan\Core\Models\Coupon;
 use BackedEnum;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
@@ -28,6 +22,12 @@ use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
 use Morilog\Jalali\Jalalian;
+use Reyhan\Core\Enums\CouponScope;
+use Reyhan\Core\Enums\CouponType;
+use Reyhan\Core\Filament\Resources\Coupons\Pages\CreateCoupon;
+use Reyhan\Core\Filament\Resources\Coupons\Pages\EditCoupon;
+use Reyhan\Core\Filament\Resources\Coupons\Pages\ListCoupons;
+use Reyhan\Core\Models\Coupon;
 use UnitEnum;
 
 class CouponResource extends Resource

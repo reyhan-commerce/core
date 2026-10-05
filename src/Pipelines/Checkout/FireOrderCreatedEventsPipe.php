@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Pipelines\Checkout;
 
+use Closure;
 use Reyhan\Core\Events\Inventory\StockDepleted;
 use Reyhan\Core\Events\Orders\OrderCreated;
-use Closure;
 
 final class FireOrderCreatedEventsPipe
 {

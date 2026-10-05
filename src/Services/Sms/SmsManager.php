@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Services\Sms;
 
+use Illuminate\Support\Manager;
 use Reyhan\Core\Services\Sms\Contracts\SmsDriverInterface;
 use Reyhan\Core\Services\Sms\Drivers\FarazSmsDriver;
 use Reyhan\Core\Services\Sms\Drivers\GhasedakDriver;
 use Reyhan\Core\Services\Sms\Drivers\KavenegarDriver;
 use Reyhan\Core\Services\Sms\Drivers\LogDriver;
 use Reyhan\Core\Settings\SmsSettings;
-use Illuminate\Support\Manager;
 
 class SmsManager extends Manager
 {

@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\Users\Pages;
 
-use Reyhan\Core\Filament\Resources\Users\UserResource;
 use Filament\Actions\EditAction;
 use Filament\Resources\Pages\ViewRecord;
+use Reyhan\Core\Filament\Resources\Users\UserResource;
 
 class ViewUser extends ViewRecord
 {

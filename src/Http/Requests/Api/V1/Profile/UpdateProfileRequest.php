@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Http\Requests\Api\V1\Profile;
 
-use Reyhan\Core\Pipelines\Normalizer\PersianNormalizer;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
+use Reyhan\Core\Pipelines\Normalizer\PersianNormalizer;
 
 final class UpdateProfileRequest extends FormRequest
 {

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Actions\Catalog;
 
-use Reyhan\Core\Models\Product;
 use Illuminate\Database\Eloquent\Collection;
+use Reyhan\Core\Models\Product;
 
 final class CompareProductsAction
 {

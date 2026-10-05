@@ -4,6 +4,13 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Providers;
 
+use BokshornIt\FilamentActivityTimeline\Policies\ActivityPolicy;
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\ServiceProvider;
+use Illuminate\Validation\Validator;
+use Laravel\Pennant\Feature;
 use Reyhan\Core\Events\Catalog\ProductRestockedEvent;
 use Reyhan\Core\Features\ShopFeature;
 use Reyhan\Core\Http\Controllers\Api\V1\AppSettingController;
@@ -22,13 +29,6 @@ use Reyhan\Core\Rules\PostalCodeRule;
 use Reyhan\Core\Rules\ShebaRule;
 use Reyhan\Core\Services\Sms\SmsManager;
 use Reyhan\Core\Support\Modules\ModuleManager;
-use BokshornIt\FilamentActivityTimeline\Policies\ActivityPolicy;
-use Illuminate\Support\Facades\Cache;
-use Illuminate\Support\Facades\Event;
-use Illuminate\Support\Facades\Gate;
-use Illuminate\Support\ServiceProvider;
-use Illuminate\Validation\Validator;
-use Laravel\Pennant\Feature;
 use Spatie\Activitylog\Models\Activity;
 use Spatie\Health\Checks\Checks\DatabaseCheck;
 use Spatie\Health\Checks\Checks\DebugModeCheck;

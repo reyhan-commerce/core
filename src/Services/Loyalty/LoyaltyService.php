@@ -4,15 +4,15 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Services\Loyalty;
 
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
+use InvalidArgumentException;
 use Reyhan\Core\Enums\CouponScope;
 use Reyhan\Core\Enums\CouponType;
 use Reyhan\Core\Models\Coupon;
 use Reyhan\Core\Models\Order;
 use Reyhan\Core\Models\User;
 use Reyhan\Core\Settings\GeneralSettings;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Str;
-use InvalidArgumentException;
 
 final class LoyaltyService
 {

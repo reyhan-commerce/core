@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Resources\Brands\Pages;
 
-use Reyhan\Core\Filament\Resources\Brands\BrandResource;
 use Filament\Resources\Pages\CreateRecord;
+use Reyhan\Core\Filament\Resources\Brands\BrandResource;
 
 class CreateBrand extends CreateRecord
 {

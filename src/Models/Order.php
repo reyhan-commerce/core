@@ -4,13 +4,8 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Models;
 
-use Reyhan\Core\Contracts\Models\OrderContract;
-use Reyhan\Core\Enums\OrderStatus;
-use Reyhan\Core\Enums\ShippingMethod as ShippingMethodEnum;
 use BokshornIt\FilamentActivityTimeline\Contracts\ProvidesActivityTitle;
 use Carbon\Carbon;
-use Reyhan\Core\Support\Reyhan;
-use Reyhan\Core\Database\Factories\OrderFactory;
 use Illuminate\Database\Eloquent\Attributes\Guarded;
 use Illuminate\Database\Eloquent\Attributes\Scope;
 use Illuminate\Database\Eloquent\Builder;
@@ -23,6 +18,11 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Str;
 use Marcusvbda\FilamentRealtimeDriver\RealtimeEvent;
+use Reyhan\Core\Contracts\Models\OrderContract;
+use Reyhan\Core\Database\Factories\OrderFactory;
+use Reyhan\Core\Enums\OrderStatus;
+use Reyhan\Core\Enums\ShippingMethod as ShippingMethodEnum;
+use Reyhan\Core\Support\Reyhan;
 use Spatie\Activitylog\Models\Concerns\LogsActivity;
 use Spatie\Activitylog\Support\LogOptions;
 

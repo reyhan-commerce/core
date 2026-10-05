@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Actions\Orders;
 
+use Illuminate\Support\Facades\DB;
 use Reyhan\Core\Models\CardTransferReceipt;
 use Reyhan\Core\Models\Order;
-use Illuminate\Support\Facades\DB;
 
 final class RejectCardTransferReceiptAction
 {

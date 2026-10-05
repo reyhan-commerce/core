@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Reyhan\Core\Filament\Widgets;
 
+use Filament\Widgets\StatsOverviewWidget as BaseWidget;
+use Filament\Widgets\StatsOverviewWidget\Stat;
 use Reyhan\Core\Enums\OrderStatus;
 use Reyhan\Core\Models\Order;
 use Reyhan\Core\Models\ProductVariant;
 use Reyhan\Core\Models\User;
-use Filament\Widgets\StatsOverviewWidget as BaseWidget;
-use Filament\Widgets\StatsOverviewWidget\Stat;
 
 class StatsOverviewWidget extends BaseWidget
 {
